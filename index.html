@@ -1,0 +1,169 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="color-scheme" content="light" />
+    <title>Ochocero Vintage</title>
+    <link rel="stylesheet" href="styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js" defer></script>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#content">Saltar al contenido</a>
+
+    <div class="fx-layer" aria-hidden="true">
+      <div class="custom-cursor" data-cursor>
+        <span aria-hidden="true">[ + ]</span>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <nav class="site-nav container" aria-label="Primary">
+        <a class="brand" href="#top" aria-label="Ochocero Vintage home">
+          OCHOCERO VINTAGE
+        </a>
+        <div class="nav-links">
+          <a href="#macro">MACRO</a>
+          <a href="#philosophy">PHILOSOPHY</a>
+          <a href="#archive">ARCHIVE</a>
+          <a href="#signal">SIGNAL</a>
+        </div>
+      </nav>
+    </header>
+
+    <main id="content" class="lookbook">
+      <section class="scene scene--hero" id="top" aria-label="Scene 1: The Broadcast">
+        <div class="hero-media media-shell media-shell--video scene-media" data-reveal-item>
+          <video class="hero-video" src="public/logoPixelArt.mp4" autoplay muted loop playsinline preload="metadata">
+           <!-- <track kind="captions" src="public/logoPixelArt-captions.vtt" srclang="es" label="Español" default />
+            <track kind="descriptions" src="public/logoPixelArt-descriptions.vtt" srclang="es" label="Descripciones" />-->
+          </video>
+          <div class="media-fallback" aria-hidden="true">
+            <span>public\logoPixelArt.mp4</span>
+          </div>
+        </div>
+
+        <div class="scene-copy container" data-stagger-group>
+          <p class="eyebrow reveal-child">SCENE 01 / THE BROADCAST</p>
+          <h1 class="power-on reveal-child" data-power-on>OCHOCERO</h1>
+          <p class="hero-text reveal-child">
+            Analog luxury transmitted like a late-night station: deliberate, rare, and slightly unstable.
+          </p>
+          <a class="button reveal-child" href="#macro" data-cursor-zone>EXPLORAR DROP</a>
+        </div>
+      </section>
+
+      <section class="scene scene--macro" id="macro" aria-label="Scene 2: The Macro Detail">
+        <div class="container scene-grid scene-grid--macro">
+          <div class="scene-title scene-title--overlap" data-stagger-group>
+            <p class="section-kicker reveal-child">SCENE 02 / MACRO DETAIL</p>
+            <h2 class="reveal-child">Texture as evidence.</h2>
+            <p class="reveal-child">A close read of the garment surface, slowed down until the fabric starts to feel archived.</p>
+          </div>
+
+          <figure class="media-shell media-shell--macro macro-stage reveal-child" data-reveal-item data-parallax-media>
+            <img src="public/contraPicado.jpeg" alt="Macro close-up of Ochocero Vintage fabric texture" loading="lazy" />
+            <div class="media-fallback" aria-hidden="true">
+              <span>public\contraPicado.jpeg</span>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="scene scene--philosophy" id="philosophy" aria-label="Scene 3: The Philosophy">
+        <div class="container split-screen" data-stagger-group>
+          <div class="split-copy reveal-child" data-cursor-zone>
+            <p class="section-kicker">SCENE 03 / THE PHILOSOPHY</p>
+            <h2>Recovered History.</h2>
+            <p>
+              Each piece is treated as a retrieved signal: restored, re-edited, and returned as a contemporary object
+              with the memory of another decade inside it.
+            </p>
+          </div>
+
+          <figure class="split-image media-shell reveal-child" data-reveal-item>
+            <img src="public/camiBlanca.jpeg" alt="Analog portrait inspired study for Ochocero Vintage" loading="lazy" />
+            <div class="media-fallback" aria-hidden="true">
+              <span>public/camiBlanca.jpeg</span>
+            </div>
+          </figure>
+        </div>
+      </section>
+
+      <section class="scene scene--archive" id="archive" aria-label="Scene 4: The Archive">
+        <div class="archive-shell" data-archive-shell>
+          <div class="container archive-intro" data-stagger-group>
+            <p class="section-kicker reveal-child">SCENE 04 / THE ARCHIVE</p>
+            <h2 class="reveal-child">A slow parade of garments.</h2>
+          </div>
+
+          <div class="archive-track" data-archive-track>
+            <article class="archive-card media-shell" data-cursor-zone>
+              <div class="archive-card__media">
+                <img src="public/tablaEspaldas.jpeg" alt="Archive garment 01 placeholder" loading="lazy" />
+                <div class="media-fallback" aria-hidden="true">
+                  <span>public/tablaEspaldas.jpeg</span>
+                </div>
+              </div>
+              <div class="archive-card__caption">
+                <p>Frame 01</p>
+                <h3>Signal Coat</h3>
+              </div>
+            </article>
+
+            <article class="archive-card media-shell" data-cursor-zone>
+              <div class="archive-card__media">
+                <img src="public/escaleras.jpeg" alt="Archive garment 02 placeholder" loading="lazy" />
+                <div class="media-fallback" aria-hidden="true">
+                  <span>public/escaleras.jpeg</span>
+                </div>
+              </div>
+              <div class="archive-card__caption">
+                <p>Frame 02</p>
+                <h3>VHS Tailoring</h3>
+              </div>
+            </article>
+
+            <article class="archive-card media-shell" data-cursor-zone>
+              <div class="archive-card__media">
+                <img src="public/apoyadoPared.jpeg" alt="Archive garment 03 placeholder" loading="lazy" />
+                <div class="media-fallback" aria-hidden="true">
+                  <span>public/apoyadoPared.jpeg</span>
+                </div>
+              </div>
+              <div class="archive-card__caption">
+                <p>Frame 03</p>
+                <h3>Memory Shell</h3>
+              </div>
+            </article>
+
+            <article class="archive-card media-shell" data-cursor-zone>
+              <div class="archive-card__media">
+                <img src="public/conGorra.jpeg" alt="Archive garment 04 placeholder" loading="lazy" />
+                <div class="media-fallback" aria-hidden="true">
+                  <span>public/conGorra.jpeg</span>
+                </div>
+              </div>
+              <div class="archive-card__caption">
+                <p>Frame 04</p>
+                <h3>Static Evening</h3>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="scene scene--cta is-hidden" id="signal" aria-label="Scene 5: The Signal">
+        <div class="cta-stage container" data-cta-stage>
+            <p class="section-kicker reveal-child">SCENE 05 / THE SIGNAL</p>
+            <h2 class="reveal-child">Enter the archive.</h2>
+            <p class="reveal-child">The line goes dark, then returns cleaner than before.</p>
+            <a class="button button--cta reveal-child" href="#top" data-cursor-zone>ENTRAR AL ARCHIVO</a>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
